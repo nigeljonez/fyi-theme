@@ -8,9 +8,18 @@
 # ])
 
 PublicBodyCategories.add(:en, [
-    "Silly ministries",
-        [ "useless_agency", "Useless ministries", "a useless ministry" ],
-        [ "lonely_agency", "Lonely agencies", "a lonely agency"],
+    "Government",
+        [ "ministry", "Ministries", "Ministries"],
+        [ "minister", "Ministers", "Ministers"],
+    "Councils",
+        [ "city_council", "City Council", "City Council"],
+        [ "district_council", "District Council", "District Council"],
+    "Health Boards",
+        [ "dhb", "District Health Board", "District Health Board"],
+    "Schools",
+        [ "primary_school", "Primary schools", "Primary schools" ],
+        [ "secondary_school", "Secondary schools", "Secondary schools"],
+        [ "university", "University", "University"],
     "Popular agencies",
-        [ "popular_agency", "Popular agencies", "a lonely agency"]
+        [ "popular_agency", "Popular agencies", "Popular agencies"]
 ])
