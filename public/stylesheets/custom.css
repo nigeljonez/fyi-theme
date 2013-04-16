@@ -4,14 +4,23 @@ font-family:Arial, sans-serif;
 }
 
 #banner {
-background-repeat:no-repeat;
-background-position:center top;
-background-color:#F0F0F0;
-background:url(/images/stripes.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 100px;
+}
+
+#banner_inner a#logo {
+    top: 25px;
+    left: 15px;
 }
 
 #topnav {
-font-family:'DeliciousRoman', Arial, sans-serif;
+    font-family:'DeliciousRoman', Arial, sans-serif;
+    top: 60px;
+}
+
+#wrapper {
+    padding-top: 100px;
 }
 
 #topnav li a,#topnav li a:visited {
@@ -262,7 +271,7 @@ color:#93278F;
 
 
 body.front {
-background:url(../images/home-grad.png) repeat-x 0 160px;
+    background:url(../images/home-grad.png) repeat-x 0 100px;
 }
 
 .request_listing span.desc {
