@@ -105,7 +105,7 @@ msgstr[0] ""
 msgstr[1] ""
 
 msgid "'Crime statistics by ward level for Wales'"
-msgstr ""
+msgstr "'Total number of book issues per library'"
 
 msgid "'Pollution levels over time for the River Tyne'"
 msgstr ""
