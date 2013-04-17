@@ -21,3 +21,7 @@
 body.front {
     background:url(../images/home-grad.png) repeat-x 0 125px;
 }
+
+a.link_button_green:hover {
+    text-decoration: none;
+}
