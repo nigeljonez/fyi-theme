@@ -15,8 +15,10 @@
     <div class="feed_link feed_link_<%=location%>">
      <% if defined? follower_count && follower_count > 0 %>
         <%= link_to _("I like this request"), do_track_path(track_thing), :class => "link_button_green" %>
-     <% else %>
+     <% elsif track_thing.info_request_id %>
         <%= link_to _("I also want to know"), do_track_path(track_thing), :class => "link_button_green" %>
+     <% else %>
+        <%= link_to _("Follow"), do_track_path(track_thing), :class => "link_button_green" %>
      <% end %>
     </div>
 
