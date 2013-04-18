@@ -1,29 +1,255 @@
 @import "elements.less";
+@import "font-awesome.less";
+
+@bodyBackground: #2a333c;
+@textColor: #ece9d7;
+@orange: #e36b23;
+@borderColor: rgba(0, 0, 0, 0.1);
+@formColor: #45515f;
+
+body, body.front {
+    font-family: Georgia,Utopia,Palatino,'Palatino Linotype',serif;
+    color: @textColor;
+    background: @bodyBackground;
+}
+
+h1, h2, h3 {
+    color: @orange;
+    font-family: 'Oswald', sans-serif;
+}
+
+p {
+    line-height: 1.6;
+}
+p.subtitle {
+    color: @textColor;
+}
+p.public-body-name-prefix {
+    margin-bottom: -5px;
+}
+#follow_count {
+    color: #49afcd;
+}
+li {
+    line-height: 1.6;
+}
+
+#frontpage_examples .excerpt, .request_listing span.desc {
+    background: none;
+    color: lighten(@textColor, 3%);
+    &:before {
+        font-family: FontAwesome;
+        content: '\f10d';
+        padding-right: 12px;
+    }
+}
+#frontpage_splash {
+    background: url(/images/flying-computer.png) no-repeat 200px bottom;
+    h1, h2 {
+        color: @orange;
+        line-height: 1.1;
+        strong {
+            color: @orange;
+        }
+    }
+}
+
+a {
+    color: @orange;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+        color: @orange;
+    }
+    &.link_button_green_large {
+        &:hover {
+            text-decoration: none;
+        }
+        background-image: none;
+        .rounded(4px);
+        .bordered(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.25));
+        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+        font-size: 17.5px;
+        padding: 11px 19px;
+        .gradient(@orange, @orange, spin(@orange, 15%));
+    }
+}
+
+#logged_in_bar {
+    color: @textColor;
+    a {
+        color: @textColor;
+        &:visited {
+            color: @textColor;
+        }
+        &:hover {
+            text-decoration: none;
+        }
+        .rounded(3px);
+        .bordered(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.25));
+        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+        font-size: 12.75px;
+        line-height: 20px;
+        padding: 2px 10px;
+        .gradient(#5bc0de, #5bc0de, spin(#5bc0de, 15%));
+    }
+}
+#search_form input[type=submit] {
+    .rounded(4px);
+}
+form input[type=submit], a.link_button_green {
+    &:hover {
+        text-decoration: none;
+    }
+    background-image: none;
+    .rounded(4px);
+    .bordered(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.25));
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    font-size: 14px;
+    line-height: 20px;
+    padding: 4px 12px;
+    .gradient(@orange, @orange, spin(@orange, 15%));
+}
 
 #banner {
-    background-repeat: no-repeat;
-    background-position: center top;
+    .gradient(@bodyBackground, lighten(@bodyBackground, 6%), lighten(@bodyBackground, 3%));
     height: 100px;
 }
 
+div.outgoing.correspondence {
+    background: @formColor;
+    .rounded(0);
+}
+div.incoming.correspondence {
+    background: lighten(spin(@formColor, 10%), 10%);
+    .rounded(0);
+}
+#request_header {
+    background-color: @formColor;
+    padding: 1em;
+}
+.form_item_note {
+    width: auto;
+}
+#request_advice {
+    padding: 1em;
+    width: auto;
+    background: @formColor;
+    float: none;
+    ui li {
+        margin: 0;
+    }
+}
+input[type=text] {
+    background: @textColor;
+}
+#request_form {
+    padding: 0 1em;
+    textarea {
+        line-height: 1.4;
+        font-size: 19px;
+    }
+}
+
+#footer {
+    background-color: @bodyBackground;
+}
+
+[class*="icon_"], [class^="icon_"] {
+    &:before {
+        font-family: FontAwesome;
+    }
+    background-image: none;
+}
+.icon_successful, .icon_partially_successful {
+    &:before {
+        content: '\f058';
+    }
+}
+.icon_waiting_response,.icon_waiting_classification,.icon_waiting_clarification {
+    &:before {
+        content: '\f017';
+    }
+}
+
+.icon_rejected {
+    &:before {
+        content: '\f057';
+    }
+}
+
+.icon_not_held, .icon_attention_requested {
+    &:before {
+        content: '\f00d';
+    }
+}
+
+.icon_requires_admin,.icon_waiting_response_overdue,.icon_waiting_response_very_overdue {
+    &:before {
+        content: '\f017';
+    }
+}
+
+.icon_gone_postal {
+    &:before {
+        content: '\f003';
+    }
+}
+
+.icon_error_message {
+    &:before {
+        content: '\f06a';
+    }
+}
+
+.icon_internal_review {
+    &:before {
+        content: '\f021';
+    }
+}
+
+.icon_user_withdrawn {
+    &:before {
+        content: '\f00d';
+    }
+}
+
+.request_icon_line {
+    padding: 8px 0 10px;
+}
+
 #banner_inner a#logo {
-    top: 25px;
-    left: 15px;
+    top: 35px;
+    left: 25px;
+}
+
+form input.use-datepicker[type=text] {
+    background: @textColor url(/images/calendar.png) no-repeat 115px 3px;
 }
 
 #topnav {
-    font-family:'DeliciousRoman', Arial, sans-serif;
-    top: 60px;
+    top: 52px;
+    ul li {
+        background: #45515f;
+        padding: 0;
+        &.selected {
+            background: @orange;
+            color: white;
+        }
+        a, a:visited {
+            font-family: 'Oswald', sans-serif;
+            color: @textColor;
+            padding: 10px 15px;
+        }
+    }
+}
+#logged_in_bar {
+    a {
+        padding: 2px 10px;
+        color: @textColor;
+    }
 }
 
 #wrapper {
     padding-top: 100px;
-}
-
-body.front {
-    background:url(../images/home-grad.png) repeat-x 0 125px;
-}
-
-a.link_button_green:hover {
-    text-decoration: none;
 }
