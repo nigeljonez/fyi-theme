@@ -1058,7 +1058,7 @@ body.front {
 h1,
 h2,
 h3 {
-  color: #d25f1b;
+  color: #034482;
   font-family: "News Cycle", "Arial Narrow Bold", sans-serif;
 }
 p {
@@ -1092,16 +1092,16 @@ li {
 }
 #frontpage_splash h1,
 #frontpage_splash h2 {
-  color: #d25f1b;
+  color: #034482;
   line-height: 1.1;
 }
 #frontpage_splash h1 strong,
 #frontpage_splash h2 strong {
   font-weight: bold;
-  color: #d25f1b;
+  color: #034482;
 }
 a {
-  color: #d25f1b;
+  color: #034482;
   text-decoration: none;
 }
 a:hover {
@@ -1122,10 +1122,10 @@ a.link_button_green_large {
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   font-size: 17.5px;
   padding: 11px 19px;
-  background: #d25f1b;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #d25f1b), color-stop(1, #d28d1b));
-  background: -ms-linear-gradient(bottom, #d25f1b, #d28d1b);
-  background: -moz-linear-gradient(center bottom, #d25f1b 0%, #d28d1b 100%);
+  background: #ec5c00;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #ec5c00), color-stop(1, #ec9700));
+  background: -ms-linear-gradient(bottom, #ec5c00, #ec9700);
+  background: -moz-linear-gradient(center bottom, #ec5c00 0%, #ec9700 100%);
 }
 a.link_button_green_large:hover {
   text-decoration: none;
@@ -1215,10 +1215,10 @@ a.link_button_green {
   font-size: 14px;
   line-height: 20px;
   padding: 4px 12px;
-  background: #d25f1b;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #d25f1b), color-stop(1, #d28d1b));
-  background: -ms-linear-gradient(bottom, #d25f1b, #d28d1b);
-  background: -moz-linear-gradient(center bottom, #d25f1b 0%, #d28d1b 100%);
+  background: #ec5c00;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #ec5c00), color-stop(1, #ec9700));
+  background: -ms-linear-gradient(bottom, #ec5c00, #ec9700);
+  background: -moz-linear-gradient(center bottom, #ec5c00 0%, #ec9700 100%);
 }
 form input[type=submit]:hover,
 a.link_button_green:hover {
@@ -1370,7 +1370,7 @@ form input.use-datepicker[type=text] {
   margin: 0 1px 0 0;
 }
 #topnav ul li.selected {
-  background: #d25f1b;
+  background: #034482;
 }
 #topnav ul li.selected a,
 #topnav ul li.selected a:visited {

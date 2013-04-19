@@ -3,7 +3,8 @@
 
 @bodyBackground: #fff;
 @textColor: #333;
-@orange: darken(#e36b23, 5%);
+@headerColor: #034482;
+@titleLinkColor: #ec5c00;
 @borderColor: rgba(0, 0, 0, 0.1);
 @formColor: #eee;
 @alternateFormColor: #fcf8e3;
@@ -17,7 +18,7 @@ body, body.front {
 }
 
 h1, h2, h3 {
-    color: @orange;
+    color: @headerColor;
     font-family: @titleFont;
 }
 
@@ -49,17 +50,17 @@ li {
 #frontpage_splash {
     background: url(/images/flying-computer.png) no-repeat 200px bottom;
     h1, h2 {
-        color: @orange;
+        color: @headerColor;
         line-height: 1.1;
         strong {
             font-weight: bold;
-            color: @orange;
+            color: @headerColor;
         }
     }
 }
 
 a {
-    color: @orange;
+    color: @headerColor;
     text-decoration: none;
     &:hover {
         text-decoration: underline;
@@ -80,7 +81,7 @@ a {
         text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
         font-size: 17.5px;
         padding: 11px 19px;
-        .gradient(@orange, @orange, spin(@orange, 15%));
+        .gradient(@titleLinkColor, @titleLinkColor, spin(@titleLinkColor, 15%));
     }
 }
 
@@ -136,7 +137,7 @@ form input[type=submit], a.link_button_green {
     font-size: 14px;
     line-height: 20px;
     padding: 4px 12px;
-    .gradient(@orange, @orange, spin(@orange, 15%));
+    .gradient(@titleLinkColor, @titleLinkColor, spin(@titleLinkColor, 15%));
 }
 
 #banner {
@@ -288,7 +289,7 @@ form input.use-datepicker[type=text] {
         padding: 0;
         margin: 0 1px 0 0;
         &.selected {
-            background: @orange;
+            background: @headerColor;
             a, a:visited {
                 color: white;
             }
