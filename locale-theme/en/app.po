@@ -1237,7 +1237,7 @@ msgid "Make a new <strong>Freedom of Information</strong> request to {{public_bo
 msgstr "Make a new <strong>Official Information Act</strong> request to {{public_body}}"
 
 msgid "Make a new<br/>\\n  <strong>Freedom <span>of</span><br/>\\n  Information<br/>\\n  request</strong>"
-msgstr "Make a new<br/>\\n  <strong>Official<br/>Information<br/>Act</strong> request"
+msgstr "Make a new<br/>\\n  <strong>Official<br/>Information<br/>Act request</strong>"
 
 msgid "Make a request"
 msgstr ""
@@ -2046,7 +2046,7 @@ msgid "Start"
 msgstr ""
 
 msgid "Start now &raquo;"
-msgstr ""
+msgstr "Start now <i class='icon-envelope'></i>"
 
 msgid "Start your own blog"
 msgstr ""
