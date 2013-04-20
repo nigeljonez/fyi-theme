@@ -64,6 +64,7 @@ a {
     text-decoration: none;
     &:hover {
         text-decoration: underline;
+        color: @headerColor;
     }
     &.link_button_green_large {
         &:hover {
@@ -290,11 +291,11 @@ form input.use-datepicker[type=text] {
         margin: 0 1px 0 0;
         &.selected {
             background: @headerColor;
-            a, a:visited {
+            a, a:visited, a:hover {
                 color: white;
             }
         }
-        a, a:visited {
+        a, a:visited, a:hover {
             font-weight: bold;
             font-family: @titleFont;
             color: @textColor;

@@ -1106,6 +1106,7 @@ a {
 }
 a:hover {
   text-decoration: underline;
+  color: #034482;
 }
 a.link_button_green_large {
   background-image: none;
@@ -1373,11 +1374,13 @@ form input.use-datepicker[type=text] {
   background: #034482;
 }
 #topnav ul li.selected a,
-#topnav ul li.selected a:visited {
+#topnav ul li.selected a:visited,
+#topnav ul li.selected a:hover {
   color: white;
 }
 #topnav ul li a,
-#topnav ul li a:visited {
+#topnav ul li a:visited,
+#topnav ul li a:hover {
   font-weight: bold;
   font-family: "News Cycle", "Arial Narrow Bold", sans-serif;
   color: #333333;
