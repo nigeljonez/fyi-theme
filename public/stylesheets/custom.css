@@ -1080,6 +1080,7 @@ li {
 .request_listing span.desc {
   background: none;
   color: #3b3b3b;
+  float: left;
 }
 #frontpage_examples .excerpt:before,
 .request_listing span.desc:before {
@@ -1228,6 +1229,7 @@ a.link_button_green {
 form input[type=submit]:hover,
 a.link_button_green:hover {
   text-decoration: none;
+  color: white;
 }
 #banner {
   background: #ffffff;
