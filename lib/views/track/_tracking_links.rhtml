@@ -17,10 +17,10 @@
         <% end %>
 <% elsif track_thing %>
     <div class="feed_link feed_link_<%=location%>">
-        <%= link_to '<img src="/images/email-16.png" alt="">', do_track_url(track_thing) %>
         <% if track_thing.info_request_id %>
-            <%= link_to _("I also want to know"), do_track_url(track_thing) %>
+            <%= link_to _("I also want to know"), do_track_url(track_thing), :class => "link_button_green" %>
         <% else %>
+            <%= link_to '<img src="/images/email-16.png" alt="">', do_track_url(track_thing) %>
             <%= link_to _("Follow by email"), do_track_url(track_thing) %>
         <% end %>
     </div>
