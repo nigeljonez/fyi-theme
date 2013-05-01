@@ -1191,6 +1191,9 @@ a.link_button_green_large:hover i {
   top: 8px;
   right: 17px;
 }
+#navigation_search [type="image"] {
+  display: none;
+}
 #search_form input[type=submit] {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
