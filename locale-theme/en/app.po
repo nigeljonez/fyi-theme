@@ -562,7 +562,7 @@ msgid "Choose your profile photo"
 msgstr ""
 
 msgid "Clarification"
-msgstr ""
+msgstr "Request sent"
 
 msgid "Classify an FOI response from "
 msgstr "Classify an OIA response from "
