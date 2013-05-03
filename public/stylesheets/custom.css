@@ -1060,6 +1060,7 @@ h2,
 h3 {
   color: #034482;
   font-family: "News Cycle", "Arial Narrow Bold", sans-serif;
+  line-height: 1.1;
 }
 p {
   line-height: 1.6;
