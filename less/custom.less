@@ -345,3 +345,20 @@ form input.use-datepicker[type=text] {
     padding: 15px 8px;
     text-align: center;
 }
+
+.sig {
+    cursor: pointer;
+    overflow: hidden;
+    border: 1px dotted #ccc;
+    padding: 10px;
+    .rounded(4px);
+    background: lighten(@alternateFormColor, 5%);
+    &.collapse {
+        max-height: 20px;
+    }
+    &:before {
+        content: '\f0c4';
+        font-family: 'FontAwesome';
+        margin: 10px;
+    }
+}

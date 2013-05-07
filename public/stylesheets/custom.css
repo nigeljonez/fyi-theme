@@ -1442,3 +1442,24 @@ form input.use-datepicker[type=text] {
 .state [class^="icon"] {
   font-size: 24px;
 }
+.sig {
+  cursor: pointer;
+  overflow: hidden;
+  border: 1px dotted #ccc;
+  padding: 10px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background: #fefefa;
+}
+.sig.collapse {
+  max-height: 20px;
+}
+.sig:before {
+  content: '\f0c4';
+  font-family: 'FontAwesome';
+  margin: 10px;
+}

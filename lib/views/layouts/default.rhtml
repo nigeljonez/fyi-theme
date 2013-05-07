@@ -16,7 +16,10 @@
         <% if !params[:print_stylesheet].nil? %>
          <%= stylesheet_link_tag 'print', :rel => "stylesheet", :media => "all"  %>
         <% end %>
-        <%= javascript_include_tag 'jquery.js', 'jquery-ui.min','jquery.cookie.js', 'general.js' %>
+        <%= javascript_include_tag  '../alavetelitheme/javascripts/jquery.js', '../alavetelitheme/javascripts/jquery-ui.min.js' %>
+        <%= javascript_include_tag 'jquery.cookie.js', 'general.js' %>
+
+        <%= javascript_include_tag '../alavetelitheme/javascripts/desig.js', '../alavetelitheme/javascripts/app.js' %>
 
         <% if @profile_photo_javascript %>
             <script type="text/javascript" src="/javascripts/jquery.Jcrop.js"></script>
