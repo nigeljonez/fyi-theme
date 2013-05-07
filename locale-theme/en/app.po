@@ -985,7 +985,7 @@ msgid "I've been asked to <strong>clarify</strong> my request"
 msgstr ""
 
 msgid "I've received <strong>all the information"
-msgstr ""
+msgstr "I've received <strong>all the information</strong>"
 
 msgid "I've received <strong>some of the information</strong>"
 msgstr ""

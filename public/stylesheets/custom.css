@@ -1397,3 +1397,47 @@ form input.use-datepicker[type=text] {
 #wrapper {
   padding-top: 100px;
 }
+.state_row {
+  display: table;
+  width: 100%;
+  border-spacing: 10px;
+  border-collapse: separate;
+}
+.state {
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background: #e9fdd3;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #bdf97b), color-stop(1, #e2fcc4));
+  background: -ms-linear-gradient(bottom, #bdf97b, #e2fcc4);
+  background: -moz-linear-gradient(center bottom, #bdf97b 0%, #e2fcc4 100%);
+  border-top: solid 1px #b0ca86;
+  border-left: solid 1px #99ba63;
+  border-right: solid 1px #b0ca86;
+  border-bottom: solid 1px #99ba63;
+  cursor: pointer;
+  line-height: 1.3;
+  display: table-cell;
+  max-width: 130px;
+  vertical-align: top;
+  padding: 15px 8px;
+  text-align: center;
+}
+.state input,
+.state [class^="icon"] {
+  display: block;
+  text-align: center;
+}
+.state input {
+  font-size: 36px;
+  margin: 0 auto 5px;
+}
+.state [class^="icon"] {
+  font-size: 24px;
+}

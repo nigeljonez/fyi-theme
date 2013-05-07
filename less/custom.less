@@ -315,3 +315,33 @@ form input.use-datepicker[type=text] {
 #wrapper {
     padding-top: 100px;
 }
+.state_row {
+    display: table;
+    width: 100%;
+    border-spacing: 10px;
+    border-collapse: separate;
+}
+.state {
+    input, [class^="icon"] {
+        display: block;
+        text-align: center;
+    }
+    input {
+        font-size: 36px;
+        margin: 0 auto 5px;
+    }
+    [class^="icon"] {
+        font-size: 24px;
+    }
+    .drop-shadow();
+    .rounded(4px);
+    .gradient(#E9FDD3, darken(#E9FDD3, 18%), darken(#E9FDD3, 3%));
+    .bordered(#B0CA86, #B0CA86, darken(#B0CA86, 10%), darken(#B0CA86, 10%));
+    cursor: pointer;
+    line-height: 1.3;
+    display: table-cell;
+    max-width: 130px;
+    vertical-align: top;
+    padding: 15px 8px;
+    text-align: center;
+}
