@@ -1057,10 +1057,11 @@ body.front {
 }
 h1,
 h2,
-h3 {
+h3,
+dt {
   color: #034482;
   font-family: "News Cycle", "Arial Narrow Bold", sans-serif;
-  line-height: 1.1;
+  line-height: 1.2;
 }
 p {
   line-height: 1.6;
