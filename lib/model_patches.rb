@@ -6,11 +6,24 @@
 #
 require 'dispatcher'
 Dispatcher.to_prepare do
-    OutgoingMessage.class_eval do
-        # Add intro paragraph to new request template
-        def default_letter
-            return nil if self.message_type == 'followup'
-            #"If you uncomment this line, this text will appear as default text in every message"    
+    InfoRequest.class_eval do
+        after_create :update_url_title
+
+        def update_url_title
+            self.update_attribute(:url_title, self.calculate_url_title)
         end
-    end        
+
+        def calculate_url_title
+            "#{self.id}-#{self.title.parameterize}"
+        end
+
+        def title=(title)
+            write_attribute(:title, title)
+            if self.new_record?
+                self.url_title = self.title.parameterize
+            else
+                self.update_attribute(:url_title, self.calculate_url_title)
+            end
+        end
+    end
 end
