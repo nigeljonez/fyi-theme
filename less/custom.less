@@ -1,6 +1,8 @@
 @import "elements.less";
 @import "font-awesome.less";
 
+@import url('//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic');
+
 @bodyBackground: #fff;
 @textColor: #333;
 @headerColor: #034482;
@@ -8,18 +10,19 @@
 @borderColor: rgba(0, 0, 0, 0.1);
 @formColor: #eee;
 @alternateFormColor: #fcf8e3;
-@titleFont: "News Cycle","Arial Narrow Bold",sans-serif;
+@titleFont: "Lora", Georgia, "Times New Roman", Times, serif;
 @infoColor: #3973ac;
 
 body, body.front {
-    font-family: Georgia,Utopia,Palatino,'Palatino Linotype',serif;
+    font-family: @titleFont;
     color: @textColor;
     background: @bodyBackground;
 }
 
-h1, h2, h3 {
+h1, h2, h3, dt {
     color: @headerColor;
     font-family: @titleFont;
+    line-height: 1.2;
 }
 
 p {
@@ -41,6 +44,7 @@ li {
 #frontpage_examples .excerpt, .request_listing span.desc {
     background: none;
     color: lighten(@textColor, 3%);
+    float: left;
     &:before {
         font-family: FontAwesome;
         content: '\f10d';
@@ -69,6 +73,7 @@ a {
     &.link_button_green_large {
         &:hover {
             text-decoration: none;
+            color: white;
             i {
                 -moz-animation: spin 0.5s 1 linear;
                 -o-animation: spin 0.5s 1 linear;
@@ -122,6 +127,9 @@ a {
         top: 8px;
         right: 17px;
     }
+    [type="image"] {
+        display: none;
+    }
 }
 #search_form input[type=submit] {
     .rounded(4px);
@@ -130,6 +138,7 @@ a {
 form input[type=submit], a.link_button_green {
     &:hover {
         text-decoration: none;
+        color: white;
     }
     background-image: none;
     .rounded(4px);
@@ -147,6 +156,7 @@ form input[type=submit], a.link_button_green {
 }
 
 div.correspondence {
+    background: white;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
     position: relative;
     padding-bottom: 10px;
@@ -306,4 +316,51 @@ form input.use-datepicker[type=text] {
 
 #wrapper {
     padding-top: 100px;
+}
+.state_row {
+    display: table;
+    width: 100%;
+    border-spacing: 10px;
+    border-collapse: separate;
+}
+.state {
+    input, [class^="icon"] {
+        display: block;
+        text-align: center;
+    }
+    input {
+        font-size: 36px;
+        margin: 0 auto 5px;
+    }
+    [class^="icon"] {
+        font-size: 24px;
+    }
+    .drop-shadow();
+    .rounded(4px);
+    .gradient(#E9FDD3, darken(#E9FDD3, 18%), darken(#E9FDD3, 3%));
+    .bordered(#B0CA86, #B0CA86, darken(#B0CA86, 10%), darken(#B0CA86, 10%));
+    cursor: pointer;
+    line-height: 1.3;
+    display: table-cell;
+    max-width: 130px;
+    vertical-align: top;
+    padding: 15px 8px;
+    text-align: center;
+}
+
+.sig {
+    cursor: pointer;
+    overflow: hidden;
+    border: 1px dotted #ccc;
+    padding: 10px;
+    .rounded(4px);
+    background: lighten(@alternateFormColor, 5%);
+    &.collapse {
+        max-height: 20px;
+    }
+    &:before {
+        content: '\f0c4';
+        font-family: 'FontAwesome';
+        margin: 10px;
+    }
 }
