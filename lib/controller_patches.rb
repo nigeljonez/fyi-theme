@@ -7,9 +7,9 @@
 require 'dispatcher'
 Dispatcher.to_prepare do
     # Example adding an instance variable to the frontpage controller
-    GeneralController.class_eval do
-        def mycontroller
-            @say_something = "Greetings friend"
-        end
-    end
+    #GeneralController.class_eval do
+    #    def mycontroller
+    #        @say_something = "Greetings friend"
+    #    end
+    #end
 end
