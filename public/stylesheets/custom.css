@@ -1084,6 +1084,8 @@ li {
   background: none;
   color: #3b3b3b;
   float: left;
+  max-width: 388px;
+  overflow: hidden;
 }
 #frontpage_examples .excerpt:before,
 .request_listing span.desc:before {
@@ -1196,6 +1198,9 @@ a.link_button_green_large:hover i {
   right: 17px;
 }
 #navigation_search [type="image"] {
+  display: none;
+}
+#navigation_search [type="submit"] {
   display: none;
 }
 #search_form input[type=submit] {
@@ -1398,6 +1403,20 @@ form input.use-datepicker[type=text] {
 }
 #wrapper {
   padding-top: 100px;
+}
+#wrapper:before {
+  background: transparent url(http://okfnlabs.org/img/labs-logo.png) 0 bottom no-repeat;
+  content: 'Generously Supported By';
+  position: fixed;
+  height: 69px;
+  width: 196px;
+  font-weight: bold;
+  text-align: center;
+  bottom: 30px;
+  right: 30px;
+  font-family: "Lora", Georgia, "Times New Roman", Times, serif;
+  opacity: 0.3;
+  z-index: 10000;
 }
 .state_row {
   display: table;

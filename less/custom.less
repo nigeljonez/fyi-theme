@@ -45,6 +45,8 @@ li {
     background: none;
     color: lighten(@textColor, 3%);
     float: left;
+    max-width: 388px;
+    overflow: hidden;
     &:before {
         font-family: FontAwesome;
         content: '\f10d';
@@ -128,6 +130,9 @@ a {
         right: 17px;
     }
     [type="image"] {
+        display: none;
+    }
+    [type="submit"] {
         display: none;
     }
 }
@@ -316,6 +321,20 @@ form input.use-datepicker[type=text] {
 
 #wrapper {
     padding-top: 100px;
+    &:before {
+        background: transparent url(http://okfnlabs.org/img/labs-logo.png) 0 bottom no-repeat;
+        content: 'Generously Supported By';
+        position: fixed;
+        height: 69px;
+        width: 196px;
+        font-weight: bold;
+        text-align: center;
+        bottom: 30px;
+        right: 30px;
+        font-family: @titleFont;
+        opacity: 0.3;
+        z-index: 10000;
+    }
 }
 .state_row {
     display: table;
