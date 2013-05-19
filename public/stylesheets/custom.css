@@ -1424,7 +1424,7 @@ form input.use-datepicker[type=text] {
   border-spacing: 10px;
   border-collapse: separate;
 }
-.state {
+.state_row label {
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
@@ -1450,16 +1450,16 @@ form input.use-datepicker[type=text] {
   padding: 15px 8px;
   text-align: center;
 }
-.state input,
-.state [class^="icon"] {
+.state_row label input,
+.state_row label [class^="icon"] {
   display: block;
   text-align: center;
 }
-.state input {
+.state_row label input {
   font-size: 36px;
   margin: 0 auto 5px;
 }
-.state [class^="icon"] {
+.state_row label [class^="icon"] {
   font-size: 24px;
 }
 .sig {
