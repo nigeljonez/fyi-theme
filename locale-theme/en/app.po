@@ -530,7 +530,7 @@ msgid "Clear photo"
 msgstr ""
 
 msgid "Click on the link below to send a message to {{public_body_name}} telling them to reply to your request. You might like to ask for an internal\\nreview, asking them to find out why response to the request has been so slow."
-msgstr ""
+msgstr "Click on the link below to send a message to {{public_body_name}} telling them to reply to your request. You might want to contact the Ombudsman\\nto complain that the response to the request has been so slow."
 
 msgid "Click on the link below to send a message to {{public_body}} reminding them to reply to your request."
 msgstr ""
@@ -982,7 +982,7 @@ msgid "If this is incorrect, or you would like to send a late response to the re
 msgstr ""
 
 msgid "If you are dissatisfied by the response you got from\\n            the public authority, you have the right to\\n            complain (<a href=\"%s\">details</a>)."
-msgstr ""
+msgstr "If you are dissatisfied by the response you got from\\n            the public authority, you have the right to\\n            complain (<a href=\"http://www.ombudsman.parliament.nz/make-a-complaint/complaining-about-access-to-official-information-551307291224432">details</a>)."
 
 msgid "If you are still having trouble, please <a href=\"%s\">contact us</a>."
 msgstr ""
