@@ -518,7 +518,7 @@ msgid "Choose your profile photo"
 msgstr ""
 
 msgid "Clarification"
-msgstr ""
+msgstr "Request sent"
 
 msgid "Clarify your FOI request - "
 msgstr "Clarify your OIA request - "
