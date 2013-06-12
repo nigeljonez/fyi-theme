@@ -17,8 +17,11 @@ PublicBodyCategories.add(:en, [
     "Health Boards",
         [ "dhb", "District Health Board", "District Health Board"],
     "Schools",
+        [ "contributing_school", "Contributing schools", "Primary schools" ],
         [ "primary_school", "Primary schools", "Primary schools" ],
         [ "secondary_school", "Secondary schools", "Secondary schools"],
+        [ "composite_school", "Composite schools", "Composite schools"],
+        [ "private_school", "Private schools", "Private schools"],
         [ "university", "University", "University"],
     "Popular agencies",
         [ "popular_agency", "Popular agencies", "Popular agencies"]
