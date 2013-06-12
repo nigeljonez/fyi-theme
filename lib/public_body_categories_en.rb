@@ -21,7 +21,7 @@ PublicBodyCategories.add(:en, [
         [ "primary_school", "Primary schools", "Primary schools" ],
         [ "secondary_school", "Secondary schools", "Secondary schools"],
         [ "composite_school", "Composite schools", "Composite schools"],
-        [ "private_school", "Private schools", "Private schools"],
+        [ "private_school", "Private schools", "Private schools are not subject to the OIA. They may <i>choose</i> to answer requests made of them."],
         [ "university", "University", "University"],
     "Popular agencies",
         [ "popular_agency", "Popular agencies", "Popular agencies"]
