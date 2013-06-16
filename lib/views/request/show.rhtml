@@ -86,7 +86,7 @@
         <%= _('By law, under all circumstances, {{public_body_link}} should have responded by now',:public_body_link => public_body_link(@info_request.public_body)) %>
         (<%= link_to _('details'), help_requesting_path + '#quickly_response' %>).
         <% if !@info_request.is_external? %>
-            You can <strong><%= link_to "complain to the Ombudsman", "http://www.ombudsman.parliament.nz/make-a-complaint/complaining-about-access-to-official-information-551307291224432" %> </strong>.
+            You can <strong><%= link_to "complain to the Ombudsman", "http://www.ombudsman.parliament.nz/make-a-complaint/complaining-about-access-to-official-information-551307291224432" %></strong>.
             
         <% end %>
     <% elsif @status == 'not_held' %>
