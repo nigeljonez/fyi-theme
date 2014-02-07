@@ -9,8 +9,8 @@ THEME_NAME = File.split(File.expand_path("../..", __FILE__))[1]
   Rails.application.config.assets.paths.unshift theme_asset_path
 end
 
-Rails.application.config.precompile.push('desig.js')
-Rails.application.config.precompile.push('app.js')
+Rails.application.config.assets.precompile.push('desig.js')
+Rails.application.config.assets.precompile.push('app.js')
 
 class ActionController::Base
   # The following prepends the path of the current theme's views to
