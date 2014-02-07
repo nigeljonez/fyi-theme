@@ -4,28 +4,27 @@
 # classes are reloaded, but initialization is not run each time.
 # See http://stackoverflow.com/questions/7072758/plugin-not-reloading-in-development-mode
 #
-require 'dispatcher'
-Dispatcher.to_prepare do
-    # better URLs
+Rails.configuration.to_prepare do
+  # better URLs
 
-    InfoRequest.class_eval do
-        after_create :update_url_title
+  InfoRequest.class_eval do
+    after_create :update_url_title
 
-        def update_url_title
-            self.update_attribute(:url_title, self.calculate_url_title)
-        end
-
-        def calculate_url_title
-            "#{self.id}-#{self.title.parameterize}"
-        end
-
-        def title=(title)
-            write_attribute(:title, title)
-            if self.new_record?
-                self.url_title = self.title.parameterize
-            elsif title != self.url_title
-                self.update_attribute(:url_title, self.calculate_url_title)
-            end
-        end
+    def update_url_title
+      self.update_attribute(:url_title, self.calculate_url_title)
     end
+
+    def calculate_url_title
+      "#{self.id}-#{self.title.parameterize}"
+    end
+
+    def title=(title)
+      write_attribute(:title, title)
+      if self.new_record?
+        self.url_title = self.title.parameterize
+      elsif title != self.url_title
+        self.update_attribute(:url_title, self.calculate_url_title)
+      end
+    end
+  end
 end
