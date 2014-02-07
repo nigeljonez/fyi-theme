@@ -1,6 +1,6 @@
 # Here you can override or add to the pages in the core website
 
-Alaveteli::Application.routes.draw do |map|
+Alaveteli::Application.routes.draw do
   # brand new controller example
   #map.with_options :controller => 'general' do |general|
   #  general.mycontroller '/mycontroller', :action => 'mycontroller'
