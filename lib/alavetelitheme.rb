@@ -34,10 +34,11 @@ end
 end
 
 # Monkey patch app code
-for patch in ['patch_mailer_paths.rb',
+for patch in [
+  'patch_mailer_paths.rb',
   'controller_patches.rb',
-  'model_patches.rb',
-  'helper_patches.rb']
+  'model_patches.rb'
+]
   require File.expand_path "../#{patch}", __FILE__
 end
 
