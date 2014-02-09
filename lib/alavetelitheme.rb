@@ -24,6 +24,7 @@ end
   Rails.application.config.assets.paths.unshift theme_asset_path
 end
 
+puts "about to prepend path"
 # In order to have the theme lib/ folder ahead of the main app one,
 # inspired in Ruby Guides explanation: http://guides.rubyonrails.org/plugins.html
 %w{ . }.each do |dir|
@@ -32,6 +33,7 @@ end
   ActiveSupport::Dependencies.autoload_paths << path
   ActiveSupport::Dependencies.autoload_once_paths.delete(path)
 end
+puts "prepended path"
 
 # Monkey patch app code
 for patch in [
