@@ -925,7 +925,7 @@ msgid "I don't want to do any more tidying now!"
 msgstr ""
 
 msgid "I like this request"
-msgstr ""
+msgstr "<i class=\"icon-star\"></i> Follow this"
 
 msgid "I would like to <strong>withdraw this request</strong>"
 msgstr ""
@@ -2583,7 +2583,7 @@ msgid "Unknown"
 msgstr ""
 
 msgid "Unsubscribe"
-msgstr ""
+msgstr "<i class=\"icon-remove-circle\"></i> Unsubscribe"
 
 msgid "Unusual response."
 msgstr ""
