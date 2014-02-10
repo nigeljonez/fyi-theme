@@ -1203,6 +1203,9 @@ a.link_button_green_large:hover i {
 #navigation_search [type="submit"] {
   display: none;
 }
+.link_to_this {
+  vertical-align: middle;
+}
 #search_form input[type=submit] {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
