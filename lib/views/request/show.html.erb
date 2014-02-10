@@ -25,9 +25,9 @@
 <div id="left_column">
     <h1><%=h(@info_request.title)%></h1>
 
-    <% if !@info_request.is_external? && @info_request.user.profile_photo %>
+    <% if !@info_request.is_external? && @info_request.user.profile_photo && !@render_to_file %>
         <p class="user_photo_on_request">
-            <%= image_tag(get_profile_photo_url(:url_name => @info_request.user.url_name))%>
+            <img src="<%= get_profile_photo_url(:url_name => @info_request.user.url_name) %>" alt="">
         </p>
     <% end %>
 
@@ -48,7 +48,7 @@
 
     <p id="request_status" class="request_icon_line icon_<%= @info_request.calculate_status %>">
     <% if @info_request.awaiting_description %>
-        <% if @is_owning_user && !@info_request.is_external? %>
+        <% if @is_owning_user && !@info_request.is_external? && !@render_to_file %>
             <%= _('Please <strong>answer the question above</strong> so we know whether the ')%>
             <%= MySociety::Format.fancy_pluralize(@new_responses_count, 'recent response contains', 'recent responses contain') %> <%= _('useful information.') %>
         <% else %>
@@ -86,8 +86,7 @@
         <%= _('By law, under all circumstances, {{public_body_link}} should have responded by now',:public_body_link => public_body_link(@info_request.public_body)) %>
         (<%= link_to _('details'), help_requesting_path + '#quickly_response' %>).
         <% if !@info_request.is_external? %>
-            You can <strong><%= link_to "complain to the Ombudsman", "http://www.ombudsman.parliament.nz/make-a-complaint/complaining-about-access-to-official-information-551307291224432" %></strong>.
-            
+          You can <strong><%= link_to "complain to the Ombudsman", "http://www.ombudsman.parliament.nz/make-a-complaint/complaining-about-access-to-official-information-551307291224432" %></strong>.
         <% end %>
     <% elsif @status == 'not_held' %>
         <%= public_body_link(@info_request.public_body) %> <%= _('<strong>did not have</strong> the information requested.') %>
@@ -146,4 +145,4 @@
     <%= render :partial => 'after_actions' %>
 </div>
 
-<%= render :partial => 'sidebar' %>
+<%- if @sidebar %><%= render :partial => 'sidebar' %><% end %>
