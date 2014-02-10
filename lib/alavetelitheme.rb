@@ -16,7 +16,7 @@ class ActionController::Base
 end
 
 # Prepend the asset directories in this theme to the asset path:
-%w(fonts stylesheets images javascripts).each do |asset_type|
+%w(font stylesheets images javascripts).each do |asset_type|
   theme_asset_path = File.join(File.dirname(__FILE__), '..', 'assets', asset_type)
   Rails.application.config.assets.paths.unshift theme_asset_path
 end
