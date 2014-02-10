@@ -35,8 +35,8 @@
  */
 @font-face {
   font-family: 'FontAwesome';
-  src: url('../font/fontawesome-webfont.eot?v=3.0.1');
-  src: url('../font/fontawesome-webfont.eot?#iefix&v=3.0.1') format('embedded-opentype'), url('../font/fontawesome-webfont.woff?v=3.0.1') format('woff'), url('../font/fontawesome-webfont.ttf?v=3.0.1') format('truetype');
+  src: url('./fontawesome-webfont.eot?v=3.0.1');
+  src: url('./fontawesome-webfont.eot?#iefix&v=3.0.1') format('embedded-opentype'), url('./fontawesome-webfont.woff?v=3.0.1') format('woff'), url('./fontawesome-webfont.ttf?v=3.0.1') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -1094,7 +1094,7 @@ li {
   padding-right: 12px;
 }
 #frontpage_splash {
-  background: url(/images/flying-computer.png) no-repeat 200px bottom;
+  background: url(/assets/flying-computer.png) no-repeat 200px bottom;
 }
 #frontpage_splash h1,
 #frontpage_splash h2 {
@@ -1375,7 +1375,7 @@ input[type=text] {
   left: 35px;
 }
 form input.use-datepicker[type=text] {
-  background: #ffffff url(/images/calendar.png) no-repeat 115px 3px;
+  background: #ffffff url(/assets/calendar.png) no-repeat 115px 3px;
 }
 #topnav {
   top: 52px;
