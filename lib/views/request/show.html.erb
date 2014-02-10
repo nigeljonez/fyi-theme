@@ -27,7 +27,7 @@
 
     <% if !@info_request.is_external? && @info_request.user.profile_photo %>
         <p class="user_photo_on_request">
-            <img src="<%= get_profile_photo_url(:url_name => @info_request.user.url_name) %>" alt="">
+            <%= image_tag(get_profile_photo_url(:url_name => @info_request.user.url_name))%>
         </p>
     <% end %>
 
