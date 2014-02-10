@@ -7,7 +7,7 @@
         <ul>
         <% if @info_request.comments_allowed? %>
           <li>
-            <%= raw(_('<a href="%s">Add an annotation</a> (to help the requester or others)') % [new_comment_path(:url_title => @info_request.url_title)]) %>
+            <%= raw(_('<a href="{{url}}">Add an annotation</a> (to help the requester or others)', :url => new_comment_url(:url_title => @info_request.url_title).html_safe)) %>
           </li>
         <% end %>
         <% if @old_unclassified %>
@@ -15,11 +15,9 @@
                 <%= link_to _('Update the status of this request'), '#describe_state_form_1' %>
             </li>
         <% end %>
-      <% if @info_request.all_can_view? %>
       <li>
           <%= link_to _("Download a zip file of all correspondence"), download_entire_request_path(:url_title => @info_request.url_title) %>
       </li>
-      <% end %>
     </ul>
     </div>
     <% if ! @info_request.is_external? %>
@@ -55,4 +53,3 @@
       </ul>
     </div>
 </div>
-
