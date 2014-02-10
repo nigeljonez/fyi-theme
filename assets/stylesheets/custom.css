@@ -1401,9 +1401,6 @@ form input.use-datepicker[type=text] {
   color: #333333;
   padding: 10px 15px;
 }
-#wrapper {
-  padding-top: 100px;
-}
 .okfn {
   text-align: center;
   font-weight: bold;
