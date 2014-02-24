@@ -30,6 +30,8 @@ end
   ActiveSupport::Dependencies.autoload_once_paths.delete(path)
 end
 
+Rails.application.config.assets.precompile += %w(desig.js app.js)
+
 # Monkey patch app code
 for patch in [
   'patch_mailer_paths.rb',
