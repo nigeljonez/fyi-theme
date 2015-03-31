@@ -1,5 +1,12 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <%= javascript_include_tag "desig.js", "app.js"%>
+<%= stylesheet_link_tag 'custom' %>
 <script type="text/javascript">
+  $(function() {
+    $('.entirebody').addClass('container');
+  });
+
+  // Google Analytics
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-15292420-1']);
   _gaq.push(['_setDomainName', 'fyi.org.nz']);
@@ -11,4 +18,3 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 </script>
-<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto+Slab:400,700&subset=latin,latin-ext,cyrillic,cyrillic-ext">

@@ -1,37 +1,35 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700);
+
 body {
-color:#444;
-font-family:Arial, sans-serif;
+  color: #444;
+}
+
+a {
+  text-decoration: none;
 }
 
 #banner {
-background-repeat:no-repeat;
-background-position:center top;
-background-color:#F0F0F0;
-background:image-url('stripes.png');
+  background-repeat:no-repeat;
+  background-position:center top;
+  background-color: #2980b9;
+  #navigation a {
+    color: #ecf0f1;
+    background-color: #3498db;
+    padding: 20px;
+    display: block;
+    &:hover {
+      color: #bdc3c7;
+    }
+  }
 }
 
-#topnav {
-font-family:'DeliciousRoman', Arial, sans-serif;
+h1, h2, h3, h4, #topnav {
+  font-family: 'PT Sans', sans-serif;
 }
 
-#topnav li a,#topnav li a:visited {
-color:#ADADAD;
-}
-
-#topnav li a:hover {
-color:#fff;
-}
-
-#topnav ul li.selected {
- background:#fff;
-}
-
-#topnav ul li a {
-color:#6B3C6A !important;
-}
 
 #logged_in_bar {
-color:#444;
+  color: #444;
 }
 
 #logged_in_bar a,#logged_in_bar a:visited {
@@ -127,7 +125,7 @@ font-family:'DeliciousRoman', Arial, sans-serif;
 
 
 form input[type=submit],a.link_button_green,a.link_button_green_large {
-font-family:'DeliciousRoman', Arial, sans-serif;
+font-family: 'DeliciousRoman', Arial, sans-serif;
 }
 
 div.frontpage-box {
@@ -253,11 +251,11 @@ color:#6B3C7F;
 }
 
 div.correspondence p.preview_subject strong {
-color:#6B3C7F;
+  color: #6B3C7F;
 }
 
 div.controller_help h1 a,#logged_in_bar a,#logged_in_bar a:visited,#stepwise_make_request strong {
-color:#93278F;
+  color: #93278F;
 }
 
 
