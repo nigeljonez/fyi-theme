@@ -7,6 +7,9 @@ body {
 a, a:visited {
   text-decoration: none;
   color: #27ae60;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 #banner {
@@ -15,12 +18,12 @@ a, a:visited {
   background-color: #27ae60;
   padding: 70px 15px 0;
   #banner_content {
-    max-width: 100%;
+    max-width: 1200px;
     margin-bottom: 10px;
   }
   #navigation {
     border-bottom: none;
-    max-width: 100%;
+    max-width: 1200px;
     a {
       color: #ecf0f1;
       background-color: #2ecc71;
@@ -131,11 +134,39 @@ div.outgoing.correspondence {
   background: image-url('stripes-70-light.png');
 }
 
+#frontpage_splash #left_column {
+  width: 50%;
+  float: left;
+  padding: 50px;
+  margin: 15px 0px;
+}
+
+#frontpage_splash #right_column {
+  padding-left: 0;
+  padding-right: 0;
+  width: 50%;
+  float: left;
+  margin-top: 30px;
+}
+
+#frontpage_search_box {
+  line-height: 1.5em;
+  margin: 15px 0 100px;
+  text-align: right;
+}
+
+#frontpage_splash {
+  color: #ecf0f1;
+  padding-bottom: 15px;
+  a {
+    color: #fff;
+  }
+}
 
 #frontpage_splash h1 {
   font-family: 'PT Sans', sans-serif;
   font-size:39px;
-  color: #2ecc71;
+  color: #ecf0f1;
   font-weight:400;
   margin: 0 30px 30px;
   line-height: 1.25em;
@@ -144,7 +175,7 @@ div.outgoing.correspondence {
 #frontpage_splash h1 strong {
   font-family: 'PT Sans', sans-serif;
   font-size:54px;
-  color: #2c3e50;
+  color: #ffffff;
   font-weight:400;
   padding-top: 10px;
   display: block;
@@ -155,24 +186,24 @@ div.outgoing.correspondence {
   font-style: italic;
   font-weight: 400;
   font-size: 25px;
-  color: #2ecc71;
+  color: #ecf0f1;
 }
 
 #frontpage_splash h2 {
   font-size: 26px;
   font-weight: 400;
-  color: #2ecc71;
+  color: #ecf0f1;
   font-family: 'PT Sans', sans-serif;
 }
 
 #frontpage_splash h2 strong {
   font-size: 31px;
-  color: #2c3e50;
+  color: #ffffff;
   font-family: 'PT Sans', sans-serif;
 }
 
 #frontpage_splash h2 span {
-  color: #2ecc71;
+  color: #ecf0f1;
   font-style: italic;
   font-size: 19px;
   font-family: 'PT Sans', sans-serif;
@@ -249,13 +280,73 @@ div.controller_help h1 a,#logged_in_bar a,#logged_in_bar a:visited,#stepwise_mak
   background:image-url('quote-marks.png') no-repeat;
 }
 
+#frontpage_examples {
+  max-width: 1200px;
+  margin: auto;
+}
+
 #frontpage_examples .excerpt {
   background:image-url('quote-marks.png') no-repeat;
 }
 
 #wrapper {
+  max-width: 1200px;
+}
+
+.front #wrapper {
   max-width: 100%;
-  padding: 0 50px;
+  padding: 0;
+}
+
+#content {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#frontpage_splash {
+  background: #2ECC71;
+}
+
+#frontpage_splash .container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+#navigation_search input[type=text] {
+  border-color: #e67e22;
+}
+
+input[type=submit], button {
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  cursor: pointer;
+  padding: 5px 10px;
+  display: inline-block;
+  margin: 5px 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+  background: #e67e22;
+  color: #fff;
+  box-shadow: 0 6px #d35400;
+  border-radius: 5px;
+  &:hover {
+    box-shadow: 0 4px #d35400;
+    top: 2px;
+  }
+}
+
+input[type=submit]:after, button:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .link_button_green_large, .link_button_green_large:visited {
@@ -279,6 +370,7 @@ div.controller_help h1 a,#logged_in_bar a,#logged_in_bar a:visited,#stepwise_mak
   &:hover {
     box-shadow: 0 4px #d35400;
     top: 2px;
+    text-decoration: none;
   }
   &:active {
     box-shadow: 0 0 #d35400;
@@ -293,6 +385,22 @@ div.controller_help h1 a,#logged_in_bar a,#logged_in_bar a:visited,#stepwise_mak
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
+}
+
+#frontpage_splash .nzherald a {
+  color: #fff;
+}
+
+.nzherald {
+  text-align: center;
+}
+
+img.sponsor {
+  height: 20px
+}
+
+#frontpage_examples ul li {
+  margin-bottom: 5px;
 }
 
 #logged_in_bar #logged_in_links {
