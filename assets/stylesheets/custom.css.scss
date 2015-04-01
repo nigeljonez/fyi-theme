@@ -137,7 +137,7 @@ div.outgoing.correspondence {
 #frontpage_splash #left_column {
   width: 50%;
   float: left;
-  padding: 50px;
+  padding: 50px 0;
   margin: 15px 0px;
 }
 
@@ -158,6 +158,8 @@ div.outgoing.correspondence {
 #frontpage_splash {
   color: #ecf0f1;
   padding-bottom: 15px;
+  margin-left: 0;
+  margin-right: 0;
   a {
     color: #fff;
   }
@@ -197,9 +199,13 @@ div.outgoing.correspondence {
 }
 
 #frontpage_splash h2 strong {
-  font-size: 31px;
   color: #ffffff;
   font-family: 'PT Sans', sans-serif;
+  line-height: 1.25em;
+}
+
+#frontpage_search_box h2 strong {
+  font-size: 60px;
 }
 
 #frontpage_splash h2 span {
