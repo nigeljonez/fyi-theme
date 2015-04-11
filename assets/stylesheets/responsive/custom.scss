@@ -135,7 +135,6 @@ div.outgoing.correspondence {
 }
 
 #frontpage_splash #left_column {
-  width: 50%;
   float: left;
   padding: 50px 0;
   margin: 15px 0px;
@@ -299,11 +298,6 @@ div.controller_help h1 a,#logged_in_bar a,#logged_in_bar a:visited,#stepwise_mak
   max-width: 1200px;
 }
 
-.front #wrapper {
-  max-width: 100%;
-  padding: 0;
-}
-
 #content {
   padding-left: 0;
   padding-right: 0;
@@ -439,13 +433,7 @@ li#navigation_search {
 }
 
 .footer a#logo {
-  background-color: #27AE60;
-  display: block;
-  padding-right: 0;
-  border-radius: 5px;
-  padding: 10px 5px;
-  width: 200px;
-  height: 60px;
+  display: none;
 }
 
 #logged_in_bar #logged_in_links a {
@@ -457,20 +445,59 @@ li#navigation_search {
   left: 0;
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+#frontpage_splash #left_column {
+  width: 50%;
+}
 
+#frontpage_splash #right_column {
+  width: 50%;
+  padding-right: 0px;
+}
+
+.front #wrapper {
+  max-width: 100%;
+  padding: 0px;
+}
+
+#banner .rsp_menu_button a.open {
+  color: #fff;
+  display: block;
+  background: rgb(46, 204, 113);
+  text-align: center;
+  padding: 10px;
+}
+
+
+#frontpage_splash #right_column {
+  padding-right: 30px;
+}
+
+#banner #banner_content {
+  margin-bottom: 0px;
+}
+
+@media (max-width: 630px) {
+
+  #footer {
+    margin: 0;
+  }
   #frontpage_splash #left_column {
     width: 100%;
+    padding: 0;
+    text-align: center;
   }
 
   #frontpage_splash #right_column {
+    width: 100%;
     padding-left: 10px;
     padding-right: 30px;
+    #frontpage_search_box {
+      text-align: center;
+    }
   }
 
   #wrapper {
     padding: 15px
   }
-
 }
 
