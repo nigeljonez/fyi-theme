@@ -454,11 +454,19 @@ li#navigation_search {
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
   #frontpage_splash #left_column {
     width: 100%;
   }
+
   #frontpage_splash #right_column {
     padding-left: 10px;
     padding-right: 30px;
   }
+
+  #wrapper {
+    padding: 15px
+  }
+
 }
+
