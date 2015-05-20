@@ -106,11 +106,11 @@ div.comment_in_request {
 }
 
 #request_form label,label.form_label {
-font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', sans-serif;
 }
 
 #navigation_search input[type=text] {
- border-color: #BE7DBC;
+  border-color: #BE7DBC;
 }
 
 
@@ -127,11 +127,20 @@ div.frontpage-box {
 
 
 div.correspondence, div.comment_in_request, div.outgoing.correspondence {
-  border: 10px solid #7f8c8d;
-  margin: 0 0 1em;
   line-height: 2em;
   color: #111;
   background: #FCFCFC;
+}
+
+
+div.correspondence, div.outgoing.correspondence {
+  border: 10px solid #7f8c8d;
+  margin: 0 0 1em;
+}
+
+div.comment_in_request {
+  margin: 0 0 1em 3em;
+  border-color: #f39c12;
 }
 
 #frontpage_splash #left_column {
