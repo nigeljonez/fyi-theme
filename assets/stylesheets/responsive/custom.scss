@@ -402,6 +402,7 @@ input[type=submit]:after, button:after {
 
 .nzherald {
   text-align: center;
+  margin: 2rem 0 1rem;
 }
 
 img.sponsor {
@@ -526,4 +527,8 @@ li#navigation_search {
 
 .about__contact-links > li > * {
   display: inline-block;
+}
+
+.about__contact-links > li.pull-right {
+  float: right;
 }
