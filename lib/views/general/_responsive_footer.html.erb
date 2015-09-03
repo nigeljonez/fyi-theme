@@ -1,0 +1,28 @@
+<div class="footer" id="footer">
+  <div class="row">
+    <ul class="about__contact-links">
+      <li>
+        <%= _('Powered by <a href="http://www.alaveteli.org/">Alaveteli</a>') %>
+      </li>
+      <li>
+        <%= link_to 'Contact us', help_contact_path %>
+      </li>
+      <li>
+        <%= link_to 'Help', help_path %>
+      </li>
+      <li>
+        <%= link_to 'Privacy and cookies', help_privacy_path %>
+      </li>
+      <li>
+        <%= link_to 'API', help_api_path %>
+      </li>
+      <li>
+        <a href="https://twitter.com/<%= AlaveteliConfiguration::twitter_username %>">@<%= AlaveteliConfiguration::twitter_username %></a>
+      </li>
+      <li>
+        Supported by
+        <a href="http://nzherald.co.nz"><img class='sponsor' src="//s3-ap-southeast-2.amazonaws.com/nzh-assets/herald.png"></a>
+      </li>
+    </ul>
+  </div>
+</div>

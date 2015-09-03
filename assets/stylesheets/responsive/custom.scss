@@ -523,3 +523,7 @@ li#navigation_search {
   height: 35px;
   background-size: 100%;
 }
+
+.about__contact-links > li > * {
+  display: inline-block;
+}
