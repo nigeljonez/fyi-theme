@@ -1,5 +1,3 @@
-require 'routingfilter'
-
 class ActionController::Base
   before_filter :set_theme_view_paths
 
