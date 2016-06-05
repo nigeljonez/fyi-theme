@@ -2901,7 +2901,7 @@ msgstr ""
 msgid "To follow the request '{{request_title}}'"
 msgstr ""
 
-msgid "To help us keep the site tidy, someone else has updated the status of the \\n{{law_used_full}} request {{title}} that you made to {{public_body}}, to \"{{display_status}}\" If you disagree with their categorisation, please update the status again yourself to what you believe to be more accurate."
+msgid "To help us keep the site tidy, someone else has updated the status of the \\n{{law_used_human}} request {{title}} that you made to {{public_body}}, to \"{{display_status}}\" If you disagree with their categorisation, please update the status again yourself to what you believe to be more accurate."
 msgstr ""
 
 msgid "To let everyone know, follow this link and then select the appropriate box."
@@ -3021,7 +3021,7 @@ msgstr "Unfortunately we don't know the OIA\\nemail address for that authority, 
 msgid "Unfortunately, we do not have a working address for {{public_body_names}}."
 msgstr ""
 
-msgid "Unfortunately, we do not have a working {{info_request_law_used_full}}\\naddress for"
+msgid "Unfortunately, we do not have a working {{info_request_law_used_human}}\\naddress for"
 msgstr ""
 
 msgid "Unsubscribe"
@@ -3165,7 +3165,7 @@ msgstr ""
 msgid "We do not have a working request email address for this authority."
 msgstr ""
 
-msgid "We do not have a working {{law_used_full}} address for {{public_body_name}}."
+msgid "We do not have a working {{law_used_human}} address for {{public_body_name}}."
 msgstr ""
 
 msgid "We don't know whether the most recent response to this request contains\\n    information or not\\n        &ndash;\\n\tif you are {{user_link}} please <a href=\"{{url}}\">sign in</a> and let everyone know."
@@ -3349,7 +3349,7 @@ msgstr ""
 msgid "You can only request information about the environment from this authority."
 msgstr ""
 
-msgid "You have a new response to the {{law_used_full}} request "
+msgid "You have a new response to the {{law_used_human}} request "
 msgstr ""
 
 msgid "You have found a bug.  Please <a href=\"{{contact_url}}\">contact us</a> to tell us about the problem"
@@ -3565,7 +3565,7 @@ msgid_plural "Your {{count}} batch requests"
 msgstr[0] ""
 msgstr[1] ""
 
-msgid "Your {{law_used_full}} request has been sent"
+msgid "Your {{law_used_human}} request has been sent"
 msgstr ""
 
 msgid "Your {{site_name}} email alert"
@@ -3870,7 +3870,7 @@ msgstr ""
 msgid "{{info_request_user_name}} only:"
 msgstr ""
 
-msgid "{{law_used_full}} request - {{title}}"
+msgid "{{law_used_human}} request - {{title}}"
 msgstr ""
 
 msgid "{{law_used}} requests at {{public_body}}"
@@ -3960,10 +3960,10 @@ msgstr ""
 msgid "{{username}} left an annotation:"
 msgstr ""
 
-msgid "{{user}} ({{user_admin_link}}) made this {{law_used_full}} request (<a href=\"{{request_admin_url}}\">admin</a>) to {{public_body_link}} (<a href=\"{{public_body_admin_url}}\">admin</a>)"
+msgid "{{user}} ({{user_admin_link}}) made this {{law_used_human}} request (<a href=\"{{request_admin_url}}\">admin</a>) to {{public_body_link}} (<a href=\"{{public_body_admin_url}}\">admin</a>)"
 msgstr ""
 
-msgid "{{user}} made this {{law_used_full}} request"
+msgid "{{user}} made this {{law_used_human}} request"
 msgstr ""
 
 msgid "« Back to search results"
