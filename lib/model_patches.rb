@@ -8,10 +8,8 @@ Rails.configuration.to_prepare do
   # better URLs
 
   InfoRequest.class_eval do
-    after_create :update_url_title
-
     def update_url_title
-      self.update_attribute(:url_title, self.calculate_url_title)
+      write_attribute(:url_title, self.calculate_url_title)
     end
 
     def calculate_url_title
