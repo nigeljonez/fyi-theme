@@ -92,16 +92,16 @@
       <%= _('Currently <strong>waiting for a response</strong> from {{public_body_link}}, they must respond promptly and', :public_body_link=> public_body_link(@info_request.public_body)) %>
       <%= _('normally') %>
       <%= _('no later than') %> <strong><%= simple_date(@info_request.date_response_required_by) %></strong>
-      (<%= link_to _("details"), "/help/requesting#quickly_response" %>).
+      (<%= link_to "details and exceptions", "/help/requesting#quickly_response" %>).
     <% elsif @status == 'waiting_response_overdue' %>
       <%= _('Response to this request is <strong>delayed</strong>.') %>
       <%= _('By law, {{public_body_link}} should normally have responded <strong>promptly</strong> and',:public_body_link=>public_body_link(@info_request.public_body)) %>
       <%= _('by') %> <strong><%= simple_date(@info_request.date_response_required_by) %></strong>
-      (<%= link_to _('details'), help_requesting_path + '#quickly_response' %>)
+      (<%= link_to "details and exceptions", help_requesting_path + '#quickly_response' %>)
     <% elsif @status == 'waiting_response_very_overdue' %>
       <%= _('Response to this request is <strong>long overdue</strong>.') %>
-      <%= _('By law, under all circumstances, {{public_body_link}} should have responded by now',:public_body_link => public_body_link(@info_request.public_body)) %>
-      (<%= link_to _('details'), help_requesting_path + '#quickly_response' %>).
+      <%= _('By law {{public_body_link}} should have responded by now',:public_body_link => public_body_link(@info_request.public_body)) %>
+      (<%= link_to "details and exceptions", help_requesting_path + '#quickly_response' %>).
 
       <% if !@info_request.is_external? %>
         You can <strong>
