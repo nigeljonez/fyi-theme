@@ -6,4 +6,6 @@ Rails.application.routes.draw do
   # get '/mycontroller' => 'general#mycontroller'
   # Additional help page example
   # get '/help/help_out' => 'help#help_out'
+  match "/help" => redirect("https://meta.fyi.org.nz/help"), :via => :get
+  match "/help/general" => redirect("https://meta.fyi.org.nz/help/about"), :as => :help_gen, :via => :get
 end
