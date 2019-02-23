@@ -26,13 +26,13 @@ $color_dark_grey: #6c6b68;
 
 $color_neutral_light: $color_sand;
 $color_neutral_dark: $color_black;
-$color_primary: $color_violet;
+$color_primary: #27ae60;
 $color_secondary: $color_orange;
 
 $body-bg: $color_neutral_light;
 
-$body-font-color: $color_neutral_dark;
-$link-color: darken($color_blue, 20%);
+$body-font-color: #444;
+$link-color: #27ae60;
 $action-color: $color_green;
 $font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $form_input-bg: $color_white;
@@ -49,5 +49,5 @@ $notice-color: $color_green;
 $error-color: $color_red;
 $action-color: $color_orange;
 
-$banner_inner_bg: $color_primary;
-$topnav_bg: darken($color_primary, 10%);
+$banner_inner_bg: #27ae60;
+$topnav_bg: #2ecc71;
