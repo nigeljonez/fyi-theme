@@ -19,4 +19,11 @@ Rails.configuration.to_prepare do
   #     "If you uncomment this line, this text will appear as default text in every message"
   #   end
   # end
+
+  PublicBody.class_eval do
+    def questions
+      _questions = PublicBodyQuestion.fetch(self)
+      _questions.empty? ? PublicBodyQuestion.fetch(self.class.internal_admin_body) : _questions
+    end
+  end
 end
