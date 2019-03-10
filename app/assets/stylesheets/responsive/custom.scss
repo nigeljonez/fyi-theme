@@ -43,6 +43,9 @@
       border-top-color: rgba(255,255,255,0.4);
     }
   }
+  #request_form_questions {
+    p { font-size: 1.1em; }
+  }
 }
 
 .logged_in_bar {
@@ -124,11 +127,13 @@ a {
   &:link,
   &:visited {
     color: $link-color;
+    text-decoration: none;
   }
   &:hover,
   &:active,
   &:focus {
     color: darken($link-color, 10%);
+    text-decoration: underline;
   }
 }
 
@@ -618,6 +623,13 @@ p.locale-list-trigger {
 
   .action-bar__follower-count {
     @include follower-count();
+  }
+}
+
+.request_listing {
+  .desc {
+    background: image-url('quote-marks.png') no-repeat;
+    min-height: 27px;
   }
 }
 
