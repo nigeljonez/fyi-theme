@@ -20,6 +20,22 @@ Rails.configuration.to_prepare do
   #   end
   # end
 
+  InfoRequest::Sluggable.class_eval do
+    def create_url_title
+      return unless title
+      update_attribute(:url_title, "#{id}-#{self.title.parameterize}")
+    end
+
+    def update_url_title
+      return unless title
+      write_attribute(:url_title, "#{id}-#{self.title.parameterize}")
+    end
+  end
+
+  InfoRequest.class_eval do
+    after_create :create_url_title
+  end
+
   PublicBody.class_eval do
     def questions
       _questions = PublicBodyQuestion.fetch(self)
