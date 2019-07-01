@@ -6,6 +6,9 @@
 # See http://stackoverflow.com/questions/7072758/plugin-not-reloading-in-development-mode
 #
 Rails.configuration.to_prepare do
+  # Fix so rake database tasks can be performed
+  next unless ActiveRecord::Base.connection.data_source_exists?(:public_bodies)
+
   # Default questions
   default = PublicBody.internal_admin_body
   default_pi_deny = _(
