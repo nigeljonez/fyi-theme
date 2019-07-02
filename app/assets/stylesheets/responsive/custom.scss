@@ -626,6 +626,29 @@ p.locale-list-trigger {
   }
 }
 
+/* Make the action bar go up instead of down in the footer */
+.request-footer__action-bar__actions {
+  .dropit .dropit-submenu {
+    bottom: 100%;
+    top: inherit;
+    margin: 10px 0;
+  }
+  .action-menu__menu {
+    &::before {
+      border-style: outset;
+      border-color: #fff transparent transparent transparent;
+      bottom: -12px;
+      top: inherit;
+    }
+    &::after {
+      border-style: outset;
+      border-color: #ccc transparent transparent transparent;
+      bottom: -14px;
+      top: inherit;
+    }
+  }
+}
+
 .request_listing {
   .desc {
     background: image-url('quote-marks.png') no-repeat;
