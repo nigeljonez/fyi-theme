@@ -606,7 +606,7 @@ p.locale-list-trigger {
 }
 
 /* Request page */
-.request-header__action-bar__actions {
+.request-header__action-bar__actions, .request-footer__action-bar__actions {
   .action-menu__button {
     @include button-secondary();
     &:after {
@@ -986,4 +986,15 @@ dt {
 // User menu
 .pro-pill {
   background-color: desaturate(darken($color_secondary, 10%), 5%);
+}
+
+input#reedit_button {
+  @include button-base;
+  background-color: desaturate(darken($color_secondary, 10%), 5%);
+  color: $color_white;
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: darken($color_secondary, 20%);
+  }
 }
