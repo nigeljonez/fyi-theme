@@ -124,6 +124,7 @@ body{
 }
 
 a {
+  .action-menu__menu__item &,
   &:link,
   &:visited {
     color: $link-color;
