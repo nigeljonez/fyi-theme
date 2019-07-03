@@ -36,6 +36,12 @@ Rails.configuration.to_prepare do
     after_create :create_url_title
   end
 
+  OutgoingMessage.class_eval do
+    def self.additional_send_errors
+      [ Aws::Errors::ServiceError ]
+    end
+  end
+
   PublicBody.class_eval do
     def questions
       _questions = PublicBodyQuestion.fetch(self)
