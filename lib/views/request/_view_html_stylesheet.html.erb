@@ -1,0 +1,24 @@
+<%= render :partial => 'general/stylesheet_includes' %>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<%= render :partial => 'layouts/favicon' %>
+
+<%#- HACKJOB: This is an ugly, but working approach to getting the Google Docs viewport to work well -%>
+<% if @attachment.has_google_docs_viewer? && @attachment.content_type != "application/pdf" %>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+    .view_html_prefix {
+      flex: 0 1 auto;
+    }
+    div#wrapper_google_embed {
+      flex: 1 1 auto;
+    }
+    div#view-html-content {
+      height: 95%;
+    }
+  </style>
+<% end %>
